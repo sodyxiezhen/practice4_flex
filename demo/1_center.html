@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1.水平居中与垂直居中</title>
+</head>
+<style type="text/css">
+	.box{
+		display: flex;
+		min-height: 500px;
+		background: #ddd;
+	}
+	.item{
+		height: 100px;
+		width: 100px;
+		border: solid 1px #000;
+		background: pink;
+	}
+	.box1{
+		flex-direction:row;
+		flex-wrap:nowrap;
+		justify-content:center;
+	}
+	.box2{
+		flex-direction:row;
+		flex-wrap:nowrap;
+		align-items: center;
+	}
+</style>
+<body>
+	<h3>下面将展示如何使用flex实现水平居中和垂直居中</h3>
+	<hr>
+	<p>1.水平居中</p>
+	<div class="box box1">
+		<div class="item">111</div>
+		<div class="item">222</div>
+		<div class="item">333</div>
+	</div>
+	<hr>
+
+	<hr>
+	<p>2.垂直居中</p>
+	<div class="box box2">
+		<div class="item">111</div>
+		<div class="item">222</div>
+		<div class="item">333</div>
+	</div>
+	<hr>
+</body>
+</html>
