@@ -4,31 +4,53 @@
 	<title>flex-圣杯布局</title>
 </head>
 <style type="text/css">
+	/*父元素设置为flex*/
 	.box{
 		display: flex;
-		min-height: 500px;
-		background: #ddd;
-		flex-direction:row;
-		flex-wrap:wrap;
-		justify-content:center;
+		min-height: 600px;
+		flex-direction:column;
 	}
-	.item{
+	/*子元素-header*/
+	.header{
 		height: 100px;
-		width: 100px;
-		border: solid 1px red;
+		background: #666666;
+	}
+	/*子元素-footer*/
+	.footer{
+		height: 100px;
+		background: #666666;
+	}
+	/*子元素-body,同事它也是一个父元素，包裹left ,center ,right*/
+	.body{
+		flex: 1;
+		background: #d6d6d6;
+		display: flex;
+	}
+	/*子元素-center*/
+	.center{
+		flex: 1;
+	}
+	/*子元素-left*/
+	.left{
+		background: #77bbdd;
+		width: 150px;
+	}
+	/*子元素-right*/
+	.right{
+		background: #f63;
+		width: 150px;
 	}
 </style>
 <body>
+	<h3>flex轻松实现圣杯布局</h3>
 	<div class="box">
-		<div class="item">111</div>
-		<div class="item">222</div>
-		<div class="item">333</div>
-		<div class="item">111</div>
-		<div class="item">222</div>
-		<div class="item">333</div>
-		<div class="item">111</div>
-		<div class="item">222</div>
-		<div class="item">333</div>
+		<div class="header">我是header部分哦</div>
+		<div class="body">
+			<div class="left">我是left部分哦</div>
+			<div class="center">我是center部分哦</div>
+			<div class="right">我是right部分哦</div>
+		</div>
+		<div class="footer">我是footer部分哦</div>
 	</div>
 </body>
 </html>
