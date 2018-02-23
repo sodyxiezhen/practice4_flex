@@ -36,6 +36,14 @@
 ![25](https://raw.githubusercontent.com/wiki/sodyxiezhen/practice3_less/25.png)<br />
 ![26](https://raw.githubusercontent.com/wiki/sodyxiezhen/practice3_less/26.png)
 
+### 实现常见弹性输入框
+- 如下是bootstrap常见输入框，特点是文本域，输入框，按钮水平排列，文本域按钮占据自己的大小，输入框响应占据其他剩余空间
+![26](https://raw.githubusercontent.com/wiki/sodyxiezhen/practice3_less/27.png)<br />
+- 用flex弹性布局就两行搞定，父元素display:flex,输入框flex:1吃光剩余空间
+![26](https://raw.githubusercontent.com/wiki/sodyxiezhen/practice3_less/28.png)<br />
+![26](https://raw.githubusercontent.com/wiki/sodyxiezhen/practice3_less/29.png)<br />
+
 ### 今日练习
-1. 使用学习的四个元素，完成垂直对齐demo 20180211
-2. 使用flex实现圣杯布局 20180211
+1. 实现弹性输入框，体会flex布局的灵活性与简洁性 20180223
+2. 复习以前webpack的基础知识,薛薛~webpack要开始啦~~ [入门文章1](https://www.jianshu.com/p/42e11515c10f)<br />
+ [js胖教程](http://jspang.com/2017/09/16/webpack3-2/)
