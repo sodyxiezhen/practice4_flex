@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3.弹性input</title>
+	<style type="text/css">
+		.input-wrapper{
+			display: flex;
+		}
+		.center {
+			flex: 1;
+		}
+		.center input{
+			width: 100%;
+		    box-sizing: border-box;
+		}
+		.left{
+			background: #77bbdd;
+		}
+		.right{
+		}
+		.right button{
+			width: 100%;
+			background: #f63;
+			border: none;
+    		height: 100%;
+    		cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="input-wrapper">
+		<div class="left input-item">我是一段文字</div>
+		<div class="center input-item">
+			<input type="text" name="" placeholder="我是弹性的哦，不信你改变窗口宽度" />
+		</div>
+		<div class="right input-item">
+			<button>点击提交</button>
+		</div>
+	</div>
+</body>
+</html>
